@@ -1,118 +1,253 @@
+
 body{
-    margin: 0%;
-    padding:0;   
-}
-header{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(185, 182, 182, 0.7)), url(../assest/img/fondo-header.jpg);
-
-    height: 150px;
-}
-.logo{
-    padding-top: 5px;
-    float: left;
-}
-.logo img{
-    width: 130px;
-    padding-left: 80px;
-
-}
-.menu{
-    text-align: end;
-}
-.menu ul{
     margin: 0;
-    padding-top: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
-.menu li{
+.gridIndex{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "header header header"
+    "img img img"
+    "main main main"
+    "footer footer footer";
+}
+.container__header{grid-area: header;}
+.main__primary--img{grid-area: img;}
+.container__card{grid-area: main; justify-content: center; align-content: center;}
+footer{grid-area: footer;}
+.container__imgFinal{grid-area: main;}
+.container__main{grid-area: main;}
+
+header{
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.5)),url(../assest/img/fondo-header.jpg);
+    display: flex;
+    justify-content: space-between;
+}
+.container__menu{
+    padding-right: 5%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.container__menu--list li{
+    border-right: 2px solid white;
     list-style-type: none;
     display: inline;
-    font-size: 20px;
-    padding: 20px;
-    border-right: 3px solid black;
+
 }
-.menu li a{
+.container__menu--list a{
     color: white;
+    font-size: 15px;
     text-decoration: none;
-    background-color: rgb(85, 85, 85);
     padding: 10px;
     border-radius: 10px;
-    
+    transition: all 0.5s;
 }
-main{
+.container__menu--list a:hover{
+    background-color: gray;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.container__logo img{
+    filter: invert();
+    height: 100%;
+}
+.container__logo{
+    padding-left: 5%;
+}
+
+.main__primary--img{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../assest/img/slider3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    align-content: center;
+    justify-content: center;
+}
+.main__primary--img h2{
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+.main__primary--img p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.texto{
+    grid-column: 2/3;
+}
+
+.container__card{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex; 
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container__card--bloque{
+    padding: 20px;
+    background-color: #dddd;
+    box-shadow: 5px 5px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+}
+.container__card--bloque img{
+    border-radius: 20px;
+    width: 60%;
+}
+.container__imgFinal{
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../assest/img/mecanica_industrial.jpg);
+    background-size: cover;
+    background-position:top;
+    min-height: 500px;
+
+}
+.container__imgFinal p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.textFinal{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.redes{
+    text-align: center;
+}
+.redes img{
+    width: 30px;
+    margin: 10px;
+}
+.copyright{
+    text-align: center;
+}
+.error img{
+    width: 40%;
+    padding-left: 30%;
+
+}
+.container__main{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto auto auto auto;
+}
+.container__main--h2{
+    text-align: center;
+    grid-row: 1/1;
+    grid-column:2/3;
+}
+.container__card__services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    justify-content: center;
+}
+.container__card--bloqueServicios{
+    padding: 20px;
+    background-color: #dddd;
+    box-shadow: 5px 5px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+
+.quienesSomos{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.vision{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.mision{
+
+    margin-left: 40px;
+    grid-column: 2/2;
+    grid-row: 1/3;
+}
+.valores{
+    grid-column: 1/1;
+    grid-row: 2/3;
+}
+.quienesSomos p{
+    text-align: justify;
+    font-size: 20px;
+}
+.quienesSomos h2{
+    font-size: 30px;
+}
+.contenedor__ubicacion{
+    text-align: center;
+}
+.contenedor__formulario{
+    text-align: center;
     margin: 0 auto;
     width: 80%;
 }
-.contenedor{
-    text-align: center;
-    text-decoration: overline 2px solid;
-    font-size: 20px;
-}
-.contenedor img{
-    width: 70%;
-    border-radius: 30px;
-}   
-.contenedor__grande{
-   /* display: flex; */
-    display: inline;
-}
-.contenedor__mediano{
-    width: 47%;
+.contenedor__formulario form label{
     display: inline-block;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: #dddd;
-    border-radius: 20px;
-}
-.contenedor__mediano p{
-    font-size: 20px;
-}
-.imagenFinal img{
-    border-radius: 20px;
-}
-.imagenFinal p{
-    font-size: 20px;
-    text-align: center;
+    width: 190px;
 }
 
-footer{
-    background: linear-gradient(rgba(253, 248, 248, 0.7), rgba(0, 0, 0, 0.7)), url(../assest/img/fondo-header.jpg);
-    text-align: center;
-}
-.redes{
-    font-size: 30px;
-    text-decoration: underline 2px solid;
-}
-.redes img{
-    width: 3%;
-    padding: 10px;
-}
-.copyright p, .copyright a{
-    font-size: 20px;
-    margin: 0;
-    color:white;
-    text-decoration: none;
-}
-form{
-	width:500px;
-	padding:16px;
-	border-radius:10px;
-	margin: 0 auto;
-	background-color:rgb(203, 199, 199);
 
-}
-form label{
-	width: 200px;
-	display:inline-block;
-}
-textarea{
-	width:100%;
-	height:250px;
-	border:1px solid black;
-	border-radius:3px;
-    margin-top: 10px;
-			
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    header{
+        height: 300px;
+        display: block;
+    }
+    .container__logo{
+        height: 100px;
+        text-align: center;
+        padding: 0;
+    }
+    .container__menu--list li{
+        display: block;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        border-right: none;
+        border-bottom: 2px solid white;
+    }
+    .container__card--bloque{
+        width: 400px;
+    }
+    .quienesSomos{
+        display: block;
+        text-align: center;
+    }
+    .mision{
+        margin-left: 0;
+    }
+
 
 
 }
-
