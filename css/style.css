@@ -248,6 +248,11 @@ header{
         margin-left: 0;
     }
 
+    .textFinal p{
+    font-size: 15px;
+    margin: 50px;
+    }
+
 
 
 }
