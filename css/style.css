@@ -1,0 +1,30 @@
+#logo{
+    width: 90px;
+    filter: invert();
+}
+#header_bg{
+    background: linear-gradient(rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.5)),url(../assest/img/fondo-header.jpg);
+}
+#navbarNav ul li:not(:first-child){
+    border-left: 2px solid white;
+}
+.carousel-inner{
+    filter:brightness(0.2);
+}
+#text_carousel{
+    z-index: 1;
+}
+
+@media only screen and (max-width:991px){
+    #navbarNav ul li:not(:first-child){
+        border: none;
+    }
+    #text_carousel p{
+        font-size: 12px;
+    }
+    #text_carousel h1{
+        font-size: 15px;
+    }
+    
+}
+
