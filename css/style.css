@@ -14,6 +14,12 @@
 #text_carousel{
     z-index: 1;
 }
+.card{
+    height: 100%;
+}
+.card img{
+    text-align: center;
+}
 
 @media only screen and (max-width:991px){
     #navbarNav ul li:not(:first-child){
