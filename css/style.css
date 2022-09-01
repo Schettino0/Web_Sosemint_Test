@@ -22,18 +22,53 @@
 .card{
     height: 100%;
 }
+.container__imgFinal{
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../assest/img/mecanica_industrial.jpg);
+    background-size: cover;
+    background-position:top;
+    min-height: 450px;
+
+}
+.container__imgFinal p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.textFinal{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+footer img{
+    width: 5%;
+    padding: 10px;
+}
+#services{
+    box-shadow: 5px 1px 10px 1px;
+}
+
 
 @media only screen and (max-width:991px){
     #navbarNav ul li:not(:first-child){
         border: none;
     }
     #text_carousel p{
-        display: none;
         font-size: 12px;
     }
     #text_carousel h1{
+        font-size: 14px;
+    }
+    .textFinal p{
         font-size: 15px;
     }
-    
+    #texto{
+        width: 390px;
+    }
+    footer img{
+        width: 15%;
+        padding: 10px;
+    }
 }
 
