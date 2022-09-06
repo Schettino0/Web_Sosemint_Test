@@ -120,9 +120,6 @@ footer img{
     .textFinal p{
         font-size: 15px;
     }
-    #texto{
-        width: 500px;
-    }
     footer img{
         width: 15%;
         padding: 10px;
@@ -137,8 +134,6 @@ footer img{
     .grid{
         display: flex;
         flex-wrap: wrap;
-
     }
-
 }
 
