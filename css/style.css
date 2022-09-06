@@ -8,16 +8,32 @@
 #navbarNav ul li:not(:first-child){
     border-left: 2px solid white;
 }
+
+#navbarNav a{
+    border-radius: 10px;
+    transition: all 0.5s;
+    padding-left: 5px;
+}
+#navbarNav a:hover{
+    color: black !important;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.5s;
+    transform: translateX(8px);
+
+}
 .carousel-inner{
-    filter:brightness(0.2);
+    filter:brightness(0.4);
 }
 #text_carousel{
     z-index: 1;
+    font-size: 20px;
 }
 .card-img-top{
     position: relative;
     left: 30%;
     width: 40%;
+    padding-top: 15px;
 }
 .card{
     height: 100%;
@@ -30,6 +46,7 @@
     min-height: 450px;
 
 }
+
 .container__imgFinal p{
     margin: 0;
     color: white;
@@ -46,8 +63,48 @@ footer img{
     padding: 10px;
 }
 #services{
-    box-shadow: 5px 1px 10px 1px;
+    display: flex;
+    box-shadow:  1px 0px 10px ;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px;
+
 }
+#contenedor--service{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer--navmenu li{
+    list-style-type: none;
+    padding: 10px;
+}
+#footer--navmenu a{
+    color: black;
+    text-decoration: 1px blue underline;
+}
+#footer--navmenu{
+    border-left: 3px solid black;
+
+}
+.grid{
+    display: grid;
+    grid-template-areas: "vision mision"
+                        "valores mision";
+
+}
+.mision{
+    grid-area: mision;
+}
+.valores{
+    grid-area: valores;
+}
+.vision{
+    grid-area: vision;
+}
+
+
 
 
 @media only screen and (max-width:991px){
@@ -55,20 +112,33 @@ footer img{
         border: none;
     }
     #text_carousel p{
-        font-size: 12px;
+        font-size: 16px;
     }
     #text_carousel h1{
-        font-size: 14px;
+        font-size: 19px;
     }
     .textFinal p{
         font-size: 15px;
     }
     #texto{
-        width: 390px;
+        width: 500px;
     }
     footer img{
         width: 15%;
         padding: 10px;
     }
+    .carousel-inner .carousel-item img{
+        height: 400px;
+    }
+    #footer--navmenu{
+        border-top: 3px solid black;
+        border-left: none;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
 }
 
