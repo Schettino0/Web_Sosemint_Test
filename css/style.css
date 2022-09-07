@@ -58,6 +58,9 @@
     align-content: center;
     justify-content: center;
 }
+footer{
+    display: flex;
+}
 footer img{
     width: 5%;
     padding: 10px;
@@ -85,7 +88,7 @@ footer img{
     text-decoration: 1px blue underline;
 }
 #footer--navmenu{
-    border-left: 3px solid black;
+    border-left: 3px solid rgba(0, 0, 0, 0.271);
 
 }
 .grid{
