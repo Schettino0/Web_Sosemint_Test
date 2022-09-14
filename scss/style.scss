@@ -1,139 +1,15 @@
+@import "footer";
+@import "header";
+@import "navmenu";
+@import "margin";
+@import "nosotros";
+@import "index";
+@import "servicio";
+@import "mixin";
+@import "map";
+
 $fontsize-lg:20px;
 $fontsize-mobile:15px;
-
-#logo {
-    width: 90px;
-}
-
-#header_bg {
-    background: linear-gradient(rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.5)), url(../assest/img/fondo-header.jpg);
-}
-
-#navbarNav {
-    ul {
-        li:not(:first-child) {
-            border-left: 2px solid white;
-        }
-    }
-
-    a {
-        border-radius: 10px;
-        transition: all 0.5s;
-        padding-left: 5px;
-
-        &:hover {
-            color: black !important;
-            border-radius: 10px;
-            background-color: white;
-            transition: all 0.5s;
-            transform: translateX(8px);
-        }
-    }
-}
-
-.carousel-inner {
-    filter: brightness(0.4);
-}
-
-#text_carousel {
-    z-index: 1;
-    font-size: $fontsize-lg;
-}
-
-.card-img-top {
-    position: relative;
-    left: 30%;
-    width: 40%;
-    padding-top: 15px;
-}
-
-.card {
-    height: 100%;
-}
-
-.container__imgFinal {
-    display: grid;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assest/img/mecanica_industrial.jpg);
-    background-size: cover;
-    background-position: top;
-    min-height: 450px;
-
-    p {
-        margin: 0;
-        color: white;
-        text-align: center;
-        font-size: $fontsize-lg;
-    }
-}
-
-.textFinal {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    
-
-    img {
-        width: 5%;
-        padding: 10px;
-    }
-}
-#services{
-    display: flex;
-    box-shadow:  1px 0px 10px ;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 600px;
-}
-#contenedor--service{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#footer--navmenu{
-    border-left: 2px solid rgba(0, 0, 0, 0.271);
-    li{
-        list-style-type: none;
-        padding: 10px;
-        
-        
-    }
-    a{  
-        transition: all 0.5s;
-        color: black;
-        text-decoration: none;
-        padding-left: 200px;
-        padding-right: 200px;
-        border-radius: 10px;
-        &:hover{
-            border-radius: 10px;
-            color: white;
-            background-color: black;
-            transition: all 0.5s;
-        }
-    }
-
-}
-.grid{
-    display: grid;
-    grid-template-areas: "vision mision"
-                        "valores mision";
-
-}
-.mision{
-    grid-area: mision;
-}
-.valores{
-    grid-area: valores;
-}
-.vision{
-    grid-area: vision;
-}
 
 @media only screen and (max-width:991px){
     #navbarNav ul li:not(:first-child){

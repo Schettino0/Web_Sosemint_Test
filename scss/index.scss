@@ -1,0 +1,46 @@
+@import "mixin"; 
+
+$fontsize-lg:20px;
+$fontsize-mobile:15px;
+.carousel-inner {
+    filter: brightness(0.4);
+}
+
+#text_carousel {
+    z-index: 1;
+    font-size: $fontsize-lg;
+}
+
+#tarjeta{
+    @include tarjeta;
+    height: 100%;
+    
+}
+.card-img-top {
+    position: relative;
+    left: 30%;
+    width: 40%;
+    padding-top: 15px;
+}
+
+.container__imgFinal {
+    width: 100%;
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assest/img/mecanica_industrial.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 450px;
+
+    p {
+        margin: 0;
+        color: white;
+        text-align: center;
+        font-size: $fontsize-lg;
+    }
+}
+
+.textFinal {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}

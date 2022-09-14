@@ -1,0 +1,10 @@
+@import "mixin"; 
+#services{
+    display: flex;
+    @include tarjeta;
+    width: 600px;
+}
+#contenedor--service{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,74 +1,9 @@
-#logo {
-  width: 90px; }
-
-#header_bg {
-  background: linear-gradient(black, rgba(0, 0, 0, 0.5)), url(../assest/img/fondo-header.jpg); }
-
-#navbarNav ul li:not(:first-child) {
-  border-left: 2px solid white; }
-
-#navbarNav a {
-  border-radius: 10px;
-  transition: all 0.5s;
-  padding-left: 5px; }
-  #navbarNav a:hover {
-    color: black !important;
-    border-radius: 10px;
-    background-color: white;
-    transition: all 0.5s;
-    transform: translateX(8px); }
-
-.carousel-inner {
-  filter: brightness(0.4); }
-
-#text_carousel {
-  z-index: 1;
-  font-size: 20px; }
-
-.card-img-top {
-  position: relative;
-  left: 30%;
-  width: 40%;
-  padding-top: 15px; }
-
-.card {
-  height: 100%; }
-
-.container__imgFinal {
-  display: grid;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assest/img/mecanica_industrial.jpg);
-  background-size: cover;
-  background-position: top;
-  min-height: 450px; }
-  .container__imgFinal p {
-    margin: 0;
-    color: white;
-    text-align: center;
-    font-size: 20px; }
-
-.textFinal {
-  display: grid;
-  align-content: center;
-  justify-content: center; }
-
 footer {
   display: flex;
   flex-wrap: wrap; }
   footer img {
     width: 5%;
     padding: 10px; }
-
-#services {
-  display: flex;
-  box-shadow: 1px 0px 10px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 600px; }
-
-#contenedor--service {
-  display: flex;
-  flex-wrap: wrap; }
 
 #footer--navmenu {
   border-left: 2px solid rgba(0, 0, 0, 0.271); }
@@ -88,6 +23,41 @@ footer {
       background-color: black;
       transition: all 0.5s; }
 
+#header_bg {
+  background: linear-gradient(black, rgba(0, 0, 0, 0.5)), url(../assest/img/fondo-header.jpg); }
+
+#logo {
+  width: 90px; }
+
+#navbarNav ul li:not(:first-child) {
+  border-left: 2px solid white; }
+
+#navbarNav a {
+  border-radius: 10px;
+  transition: all 0.5s;
+  padding-left: 5px; }
+  #navbarNav a:hover {
+    color: black !important;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.5s;
+    transform: translateX(8px); }
+
+.mt-1 {
+  margin-top: 10px; }
+
+.mt-2 {
+  margin-top: 20px; }
+
+.mt-3 {
+  margin-top: 30px; }
+
+.mt-4 {
+  margin-top: 40px; }
+
+.mt-5 {
+  margin-top: 50px; }
+
 .grid {
   display: grid;
   grid-template-areas: "vision mision" "valores mision"; }
@@ -100,6 +70,77 @@ footer {
 
 .vision {
   grid-area: vision; }
+
+.carousel-inner {
+  filter: brightness(0.4); }
+
+#text_carousel {
+  z-index: 1;
+  font-size: 20px; }
+
+#tarjeta {
+  box-shadow: 1px 0px 10px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  height: 100%; }
+
+.card-img-top {
+  position: relative;
+  left: 30%;
+  width: 40%;
+  padding-top: 15px; }
+
+.container__imgFinal {
+  width: 100%;
+  display: grid;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assest/img/mecanica_industrial.jpg);
+  background-size: cover;
+  background-position: top;
+  min-height: 450px; }
+  .container__imgFinal p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px; }
+
+.textFinal {
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+#services {
+  display: flex;
+  box-shadow: 1px 0px 10px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  width: 600px; }
+
+#contenedor--service {
+  display: flex;
+  flex-wrap: wrap; }
+
+.imgred-instagram:hover {
+  border: 3px solid #E1306C;
+  border-radius: 10px; }
+
+.imgred-instagram {
+  border: 1px solid black; }
+
+.imgred-facebook:hover {
+  border: 3px solid #4267B2;
+  border-radius: 10px; }
+
+.imgred-facebook {
+  border: 1px solid black; }
+
+.imgred-gmail:hover {
+  border: 3px solid #4285F4;
+  border-radius: 10px; }
+
+.imgred-gmail {
+  border: 1px solid black; }
 
 @media only screen and (max-width: 991px) {
   #navbarNav ul li:not(:first-child) {

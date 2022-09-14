@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    grid-template-areas: "vision mision"
+                        "valores mision";
+}
+.mision{
+    grid-area: mision;
+}
+.valores{
+    grid-area: valores;
+}
+.vision{
+    grid-area: vision;
+}

@@ -1,0 +1,37 @@
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    img {
+        width: 5%;
+        padding: 10px;
+    }
+}
+#footer--navmenu{
+    border-left: 2px solid rgba(0, 0, 0, 0.271);
+    li{
+        list-style-type: none;
+        padding: 10px;
+        
+        
+    }
+    a{  
+        transition: all 0.5s;
+        color: black;
+        text-decoration: none;
+        padding-left: 200px;
+        padding-right: 200px;
+        border-radius: 10px;
+        &:hover{
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            transition: all 0.5s;
+        }
+    }
+
+}
+

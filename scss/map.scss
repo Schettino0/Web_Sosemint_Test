@@ -1,0 +1,15 @@
+$colorRedes:(
+    instagram: #E1306C,
+    facebook: #4267B2,
+    gmail: #4285F4
+);
+
+@each $redes,$color in $colorRedes {
+    .imgred-#{$redes}:hover{
+        border: 3px solid $color;
+        border-radius: 10px;
+    }
+    .imgred-#{$redes}{
+        border: 1px solid black 
+    }
+}
