@@ -7,43 +7,5 @@
 @import "servicio";
 @import "mixin";
 @import "map";
+@import "media";
 
-$fontsize-lg:20px;
-$fontsize-mobile:15px;
-
-@media only screen and (max-width:991px){
-    #navbarNav ul li:not(:first-child){
-        border: none;
-    }
-    #text_carousel{
-        p{
-            font-size: $fontsize-mobile;
-        }
-        h1{
-            font-size: $fontsize-mobile;
-        }
-    }
-    .textFinal p{
-        font-size: $fontsize-mobile;
-    }
-    footer img{
-        width: 15%;
-        padding: 10px;
-    }
-    .carousel-inner .carousel-item img{
-        height: 400px;
-    }
-    #footer--navmenu{
-        border-top: 3px solid black;
-        border-left: none;
-        a{
-            padding-left: 100px;
-            padding-right: 100px
-            
-        }
-    }
-    .grid{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
