@@ -93,13 +93,19 @@ footer {
   grid-template-areas: "vision mision" "valores mision"; }
 
 .mision {
-  grid-area: mision; }
+  grid-area: mision;
+  border: 2px solid black;
+  border-radius: 10px; }
 
 .valores {
-  grid-area: valores; }
+  grid-area: valores;
+  border: 2px solid black;
+  border-radius: 10px; }
 
 .vision {
-  grid-area: vision; }
+  grid-area: vision;
+  border: 2px solid black;
+  border-radius: 10px; }
 
 .carousel-inner {
   filter: brightness(0.4); }

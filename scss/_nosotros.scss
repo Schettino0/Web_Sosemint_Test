@@ -1,3 +1,4 @@
+@import "mixin";
 .grid{
     display: grid;
     grid-template-areas: "vision mision"
@@ -5,10 +6,15 @@
 }
 .mision{
     grid-area: mision;
+    @include borderblack;
 }
 .valores{
     grid-area: valores;
+    @include borderblack;
+
 }
 .vision{
     grid-area: vision;
+    @include borderblack;
+
 }
