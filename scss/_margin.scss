@@ -3,3 +3,14 @@
         margin-top:10px*$i;
     }
 }
+@for $i from 1 through 5 {
+    .mb-#{$i}{
+        margin-bottom:10px*$i;
+    }
+}
+
+@for $i from 1 through 5 {
+    .p-#{$i}{
+        padding:10px*$i;
+    }
+}

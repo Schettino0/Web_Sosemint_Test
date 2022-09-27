@@ -1,0 +1,15 @@
+.container__form{
+    background-color: rgba(236, 234, 234, 0.867);
+    border-radius: 20px;
+    display: flex;
+        justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+    form{
+        input{
+            width: 280px;
+        }
+    }
+}
